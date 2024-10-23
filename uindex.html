@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="uindex.css" rel="stylesheet">
+    <title>WiChat | Modern Chat UI</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="logo">WiChat</div>
+            <ul class="menu">
+                <li class="active"><i class="fas fa-comments"></i><span>Chats</span></li>
+                <li><a href="ucalls.html"><i class="fas fa-phone"></i><span>Calls</span></a></li>
+                <li><a href="ustatus.html"><i class="fas fa-circle"></i><span>Status</span></a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="contacts-list">
+                <div class="search-box">
+                    <input type="text" placeholder="Search users..." />
+                </div>
+                <ul class="contacts">
+                    <li class="contact">
+                        <img src="1st.png" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Ravi Sharma</div>
+                            <div class="contact-status online">Online</div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <img src="2nd.png" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Aisha Khan</div>
+                            <div class="contact-status offline">Offline</div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <img src="4rt.png" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Arjun Verma</div>
+                            <div class="contact-status offline">Offline</div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <img src="5th.png" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Priya Singh</div>
+                            <div class="contact-status online">Online</div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <img src="6th.png" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Neha Gupta</div>
+                            <div class="contact-status online">Online</div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <img src="7th.png" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Amit Joshi</div>
+                            <div class="contact-status offline">Offline</div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <img src="8th.png" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Sneha Patil</div>
+                            <div class="contact-status offline">Offline</div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/chat_avatar_08.jpg" alt="avatar" />
+                        <div class="contact-info">
+                            <div class="contact-name">Karan Mehta</div>
+                            <div class="contact-status online">Online</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="chat-area">
+                <div class="chat-header">
+                    <img src="1st.png" alt="avatar" />
+                    <div class="chat-info">
+                        <div class="chat-name">Ravi Sharma</div>
+                    </div>
+                    <div class="call-options">
+                        <button class="call-button audio-call"><i class="fas fa-phone-alt"></i></button>
+                        <button class="call-button video-call"><i class="fas fa-video"></i></button>
+                    </div>
+                </div>
+                
+
+                <div class="chat-history">
+                    <div class="message message-out">
+                        <div class="message-content">Hey! How are you?</div>
+                        <div class="message-time">10:10 AM</div>
+                    </div>
+                    <div class="message message-in align-right">
+                        <div class="message-content">I'm good, how about you?</div>
+                        <div class="message-time">10:11 AM</div>
+                    </div>
+                </div>
+
+                <div class="message-box">
+                    <textarea placeholder="Type your message..."></textarea>
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

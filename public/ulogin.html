@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="ulogin.css" rel="stylesheet">
+    <script src="client.js"></script>
     <title>WiChat | Login/Signup</title>
 </head>
 <body>
@@ -23,10 +24,12 @@
                     <p>Don't have an account? <a href="#" id="show-signup">Signup here</a></p>
                 </div>
             </form>
-            <form id="signup-form" class="hidden">
+            <form id="signup-form" class="hidden" enctype="multipart/form-data">
                 <input type="text" placeholder="Username" required>
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Password" required>
+                <label for="avatar">Upload Avatar:</label>
+                <input type="file" id="avatar" accept="image/*" required>
                 <button type="submit">Signup</button>
                 <div class="toggle-form">
                     <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
@@ -34,24 +37,5 @@
             </form>
         </div>
     </div>
-
-    <script>
-        const loginForm = document.getElementById('login-form');
-        const signupForm = document.getElementById('signup-form');
-        const showSignup = document.getElementById('show-signup');
-        const showLogin = document.getElementById('show-login');
-
-        showSignup.addEventListener('click', function(event) {
-            event.preventDefault();
-            loginForm.classList.add('hidden');
-            signupForm.classList.remove('hidden');
-        });
-
-        showLogin.addEventListener('click', function(event) {
-            event.preventDefault();
-            signupForm.classList.add('hidden');
-            loginForm.classList.remove('hidden');
-        });
-    </script>
 </body>
 </html>
